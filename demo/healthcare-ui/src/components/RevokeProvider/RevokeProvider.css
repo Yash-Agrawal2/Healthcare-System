@@ -1,0 +1,128 @@
+/* ProviderForms.css */
+.provider-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.provider-form-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.provider-form-card h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.current-patient {
+  background: #f0f4f8;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 1.5rem;
+  word-break: break-all;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.authorize-btn {
+  background-color: #4299e1;
+  color: white;
+}
+
+.authorize-btn:hover:not(.loading) {
+  background-color: #3182ce;
+}
+
+.revoke-btn {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.revoke-btn:hover:not(.loading) {
+  background-color: #c53030;
+}
+
+button.loading {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+  position: relative;
+}
+
+button.loading::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.error-message {
+  color: #e53e3e;
+  padding: 0.75rem;
+  background-color: #fff5f5;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.success-message {
+  color: #38a169;
+  padding: 0.75rem;
+  background-color: #f0fff4;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

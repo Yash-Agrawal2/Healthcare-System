@@ -1,0 +1,37 @@
+.patient-details {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+  
+  .patient-details.empty {
+    background: #f8f9fa;
+    color: #666;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .patient-details h3 {
+    color: #166088;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .detail-row {
+    display: flex;
+    margin-bottom: 0.75rem;
+  }
+  
+  .detail-label {
+    font-weight: 500;
+    min-width: 150px;
+    color: #555;
+  }
+  
+  .detail-value {
+    flex: 1;
+    word-break: break-word;
+  }
